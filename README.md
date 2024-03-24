@@ -1,2 +1,2 @@
 # IOE Cheat tool
-hey myself write des for this shit
+hey myself write desc for this shit

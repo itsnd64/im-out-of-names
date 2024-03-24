@@ -198,8 +198,8 @@ def readaudio(filepath):
     response_format="text"
     )[:-1]
 def combinemp3s():
-    #warn:next line is huge and stupid bc for some reason my previous beautifully code sometime dont work with ffmpeg
-    subprocess.run(['bin\\ffmpeg', '-i', 'bin\\temp\\0.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\1.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\2.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\3.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\4.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\5.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\6.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\7.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\8.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\9.mp3', '-i', 'bin\\lol.mp3', '-filter_complex', '[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a][8:a][9:a][10:a][11:a][12:a][13:a][14:a][15:a][16:a][17:a][18:a][19:a]concat=n=20:v=0:a=1[aout]', '-map', '[aout]', 'bin\\temp\\output.mp3'], check=True)
+    #warn:next line is huge and stupid bc for some reason my previous beautifully code sometime doesnt work with ffmpeg
+    subprocess.run(['bin\\ffmpeg', '-i', 'bin\\temp\\0.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\1.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\2.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\3.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\4.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\5.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\6.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\7.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\8.mp3', '-i', 'bin\\lol.mp3', '-i', 'bin\\temp\\9.mp3', '-i', 'bin\\lol.mp3', '-filter_complex', '[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a][8:a][9:a][10:a][11:a][12:a][13:a][14:a][15:a][16:a][17:a][18:a][19:a]concat=n=20:v=0:a=1[aout]', '-map', '[aout]', '-loglevel', 'panic', 'bin\\temp\\output.mp3'], check=True)
 def stupiddiff(a, b):#i should've use set() but it works anyway
     diff = ''
     for a,b in zip(a,b):
